@@ -37,7 +37,7 @@ class MatrixExperimentsTest {
       } // for col
     } // for row
 
-    assertFigure("""
+     assertFigure("""
       +---+---+---+---+---+
       | X | X | X | X | X |
       +---+---+---+---+---+
@@ -52,6 +52,7 @@ class MatrixExperimentsTest {
       | X | X | X | X | X |
       +---+---+---+---+---+
       """, sample, "Matrix.set");
+    
 
     sample.insertCol(2);
     assertFigure("""

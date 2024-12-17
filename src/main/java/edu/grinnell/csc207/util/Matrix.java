@@ -11,6 +11,7 @@ import java.io.PrintWriter;
  *   The type of value stored in the matrix.
  */
 public interface Matrix<T> extends Cloneable {
+
   // +----------------+----------------------------------------------
   // | Static methods |
   // +----------------+
@@ -317,6 +318,7 @@ public interface Matrix<T> extends Cloneable {
    *
    * @return a copy of the matrix.
    */
+  @SuppressWarnings({"rawtypes"})
   public Matrix clone();
 
   /**
